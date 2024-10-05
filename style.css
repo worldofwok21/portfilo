@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@300;400;500;700&display=swap');
+
+/* basic code */
+:root{
+    --light-purple:#b9b7bcea;
+    --gray:#6c757d;
+    --purple:#0000;
+}
+
+*{
+    box-sizing: border-box;
+}
+html{
+    line-height: 1.15;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight:400;
+    font-size: 1rem;
+    line-height: 1.5;
+    color:var(--gray);
+    text-align:center;
+    background:#161616;
+}
+.purple{
+    color:#0a0a0a;
+}
+.gray{
+    color:#6c757d;
+}
+.light-purple{
+    color:#0a0a0a;
+}
+.bg-nav{
+    background:#dac3ff;
+}
+/* header section */
+#home{
+    background: #050505;
+    box-shadow: 0px 15px 5px gray;
+}
+.about-img{
+    margin-left:-100px;
+    right:-60px;
+}
+.btn{
+    padding:10px 25px;
+    border-radius: 100px;
+}
+.btn-blue{
+    border:2.4px solid #6c757d;
+    color:#6c757d;
+    background: #dac3ff;
+}
+.hero-text{
+    margin-top: 150px;
+}
+.typed-cursor{
+    font-size:45px;
+    color:#fff;
+}
+.position-absolute{
+    font-weight: 700;
+}
+
+/* navbar section */
+a{
+    color:var(--gray);
+    text-decoration: none;
+    background: transparent;
+}
+a:hover{
+    color:var(--light-purple);
+    text-decoration: underline;
+}
+/* .navbar-light{
+    display: none;
+} */
+.navbar-light .navbar-nav .nav-link{
+    padding:25px 10px;
+    color:var(--gray);
+    font-weight: 500;
+    outline:none;
+}
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .nav-link.active{
+    color:var(--light-purple);
+}
+.card{
+    margin-bottom: 15px;
+    background: #343434;
+    box-shadow: 5px 10px 0px var(--gray);
+}
+.card:hover{
+    box-shadow: 2px 5px 0px rgb(188, 188, 188);
+    animation: shake 1s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
